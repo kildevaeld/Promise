@@ -13,13 +13,11 @@ let package = Package(
     targets: [
         .target(
             name: "Promise",
-            dependencies: [],
-            path: "Promise"
+            dependencies: []
         ),
         .testTarget(
-            name: "PromiseTest",
-            dependencies: ["Promise"],
-            path: "PromiseTests"
+            name: "PromiseTests",
+            dependencies: ["Promise"]
         )
     ]
 )
